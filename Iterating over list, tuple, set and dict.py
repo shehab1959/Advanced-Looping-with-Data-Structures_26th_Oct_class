@@ -10,7 +10,6 @@ for i in fruit_list:
 #Processing Mango
 #Processing Guava
 
-
 print("Start Tuple:")
 ##Ordered collection (Tuple)
 sports_list = ("Football", "Cricket", "Badminton")
