@@ -50,3 +50,33 @@ for i in my_set:
 
 print(cube_of_even_numbers) #{1, 27, 729, 343} Here remove duplicaate number cube
 
+
+
+
+##Example:05 (Using Dict)
+price_list = {"rice":60, "oil":200, "sugar":100, "milk":92}
+discounted_price_list = {}
+
+for item,price in price_list.items():
+    #discounted_price_list.update({item:price*0.9}) Use this, Or:
+    discounted_price_list[item] = price*0.9 
+print(discounted_price_list) #{'rice': 54.0, 'oil': 180.0, 'sugar': 90.0, 'milk': 82.8}
+
+
+#Comprehension form given below:
+price_list = {"rice":60, "oil":200, "sugar":100, "milk":92}
+discounted_price_list = {item:price*0.9 for item,price in price_list.items()}
+print(discounted_price_list) #{'rice': 54.0, 'oil': 180.0, 'sugar': 90.0, 'milk': 82.8}
+
+
+
+
+##
+price_list = {"Cha":15, "Biri":20, "Pan":12, "milk":22}
+discounted_price_list = {}
+
+for item,price in price_list.items():
+    #discounted_price_list.update({item:price*0.9}) Use this, Or:
+    discounted_price_list[item] = price*0.9 
+print(f"Previous price was: {price_list}") #Previous price was: {'Cha': 15, 'Biri': 20, 'Pan': 12, 'milk': 22}
+print(f"Now Updated Discount Price is: {discounted_price_list}") #Now Updated Discount Price is: {'Cha': 13.5, 'Biri': 18.0, 'Pan': 10.8, 'milk': 19.8}
